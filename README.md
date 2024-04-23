@@ -1,6 +1,6 @@
 # Signals + React
 
-> 0.0.1
+> 0.0.2
 
 A proposal to add Signals to React...
 
