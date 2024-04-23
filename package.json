@@ -1,0 +1,61 @@
+{
+  "name": "@dmnchzl/signals-react",
+  "version": "0.0.1",
+  "description": "A proposal to add Signals to React...",
+  "author": "Damien Chazoule <dmnchzl@pm.me>",
+  "repository": "https://github.com/dmnchzl/signalsreact.git",
+  "type": "module",
+  "files": [
+    "dist",
+    "package.json",
+    "README.md"
+  ],
+  "main": "./dist/index.umd.js",
+  "module": "./dist/index.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.umd.js"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "test": "vitest --ui",
+    "lint": "eslint src --ext ts,tsx",
+    "format": "prettier \"src/**/*.{ts,tsx}\" --write"
+  },
+  "dependencies": {
+    "react": "~18.2.0",
+    "react-dom": "~18.2.0",
+    "signal-polyfill": "~0.1.0"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "~6.4.0",
+    "@testing-library/react": "~15.0.0",
+    "@types/node": "~20.12.5",
+    "@types/react": "~18.2.75",
+    "@types/react-dom": "~18.2.25",
+    "@typescript-eslint/eslint-plugin": "~7.7.0",
+    "@typescript-eslint/parser": "~7.7.0",
+    "@vitejs/plugin-react-swc": "~3.6.0",
+    "@vitest/ui": "~1.5.0",
+    "eslint": "~8.57.0",
+    "eslint-config-prettier": "~9.1.0",
+    "eslint-plugin-prettier": "~5.1.0",
+    "eslint-plugin-react": "~7.34.0",
+    "eslint-plugin-react-hooks": "~4.6.0",
+    "eslint-plugin-react-refresh": "~0.4.5",
+    "eslint-plugin-testing-library": "~6.2.0",
+    "happy-dom": "~14.7.0",
+    "prettier": "~3.2.5",
+    "typescript": "~5.4.5",
+    "vite": "~5.2.10",
+    "vitest": "~1.5.0"
+  },
+  "engines": {
+    "node": ">=18.18.0"
+  },
+  "license": "WTFPL"
+}
